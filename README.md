@@ -62,7 +62,7 @@ Content-Type: application/json
 ### Transferir saldo
 
 ```http
-POST /api/v1/beneficios/transferencias
+POST /api/v1/beneficios/transferir
 Content-Type: application/json
 
 {

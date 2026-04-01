@@ -1,0 +1,13 @@
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/mapper/BeneficioMapper.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/repository/BeneficioRepository.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/controller/ApiExceptionHandler.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/service/BeneficioService.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/config/EjbConfig.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/BackendApplication.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/config/CorsConfig.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/dto/ApiErrorResponse.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/controller/BeneficioController.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/dto/TransferenciaRequest.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/dto/BeneficioResponse.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/dto/BeneficioRequest.java
+/home/srv-patrick/ambiente/bip-teste-integrado-main/backend-module/src/main/java/com/example/backend/dto/TransferenciaResponse.java

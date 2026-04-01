@@ -1,0 +1,13 @@
+com/example/backend/config/EjbConfig.class
+com/example/backend/config/CorsConfig.class
+com/example/backend/repository/BeneficioRepository.class
+com/example/backend/dto/BeneficioRequest.class
+com/example/backend/mapper/BeneficioMapper.class
+com/example/backend/controller/BeneficioController.class
+com/example/backend/controller/ApiExceptionHandler.class
+com/example/backend/BackendApplication.class
+com/example/backend/dto/TransferenciaRequest.class
+com/example/backend/dto/TransferenciaResponse.class
+com/example/backend/service/BeneficioService.class
+com/example/backend/dto/ApiErrorResponse.class
+com/example/backend/dto/BeneficioResponse.class

@@ -1,0 +1,99 @@
+<div class="container">
+
+    <h1>Desafio Fullstack Integrado</h1>
+
+    <div class="grid-two">
+
+        <!-- FORM BENEFÍCIO -->
+        <div class="card">
+            <h2>{{ form.id ? 'Editar benefício' : 'Novo benefício' }}</h2>
+
+            <form (ngSubmit)="save()">
+
+                <input [(ngModel)]="form.nome" name="nome" placeholder="Nome" required>
+
+                <textarea [(ngModel)]="form.descricao" name="descricao" placeholder="Descrição"></textarea>
+
+                <input [(ngModel)]="form.valor" name="valor"
+                       type="number" min="0" step="0.01"
+                       placeholder="Valor" required>
+
+                <label>
+                    <input [(ngModel)]="form.ativo" name="ativo" type="checkbox">
+                    Ativo
+                </label>
+
+                <div class="actions">
+                    <button type="submit">Salvar</button>
+                    <button type="button" class="secondary" (click)="resetForm()">Limpar</button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- TRANSFERÊNCIA -->
+        <div class="card">
+            <h2>Transferência</h2>
+
+            <form (ngSubmit)="transfer()">
+
+                <select [(ngModel)]="transferForm.fromId" name="fromId" required>
+                    <option [ngValue]="undefined">Origem</option>
+                    <option *ngFor="let item of beneficios" [ngValue]="item.id">
+                        {{ item.nome }}
+                    </option>
+                </select>
+
+                <select [(ngModel)]="transferForm.toId" name="toId" required>
+                    <option [ngValue]="undefined">Destino</option>
+                    <option *ngFor="let item of beneficios" [ngValue]="item.id">
+                        {{ item.nome }}
+                    </option>
+                </select>
+
+                <input [(ngModel)]="transferForm.amount" name="amount"
+                       type="number" min="0.01" step="0.01"
+                       placeholder="Valor" required>
+
+                <button type="submit">Transferir</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- TABELA -->
+    <div class="card">
+        <h2>Benefícios</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Ativo</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr *ngFor="let item of beneficios">
+                <td>{{ item.id }}</td>
+                <td>{{ item.nome }}</td>
+                <td>{{ item.descricao }}</td>
+                <td>{{ item.valor | number:'1.2-2' }}</td>
+                <td>{{ item.ativo ? 'Sim' : 'Não' }}</td>
+
+                <td class="actions">
+                    <button type="button" class="secondary" (click)="edit(item)">Editar</button>
+                    <button type="button" class="danger" (click)="remove(item.id!)">Excluir</button>
+                </td>
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
